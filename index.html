@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LushLook — home beauty services at your doorstep.">
+  <title>LushLook | Beauty at your doorstep</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">L</span>ushLook</a>
+    <nav><a href="#services">Services</a><a href="#how-it-works">How it works</a><a class="nav-cta" href="#booking">Book a service</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR BEAUTY, YOUR COMFORT</p>
+        <h1>Beauty at your <span>doorstep.</span></h1>
+        <p class="hero-text">Discover convenient at-home beauty services and request an appointment with a beauty professional.</p>
+        <a class="button" href="#services">Explore services</a>
+      </div>
+      <div class="hero-art" aria-label="Decorative LushLook illustration"><div class="art-circle"><span>LL</span></div><p>Feel good. Look radiant.</p></div>
+    </section>
+    <section class="section" id="services">
+      <div class="section-heading"><p class="eyebrow">WHAT WE OFFER</p><h2>Explore our services</h2><p>Sample service categories for the project demo. Update them to match your final project.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">✦</div><h3>Facial & skincare</h3><p>At-home facial and basic skincare services.</p><span>From ₹499</span></article>
+        <article class="service-card"><div class="service-icon">❀</div><h3>Hair care</h3><p>Hair styling and care services at home.</p><span>From ₹399</span></article>
+        <article class="service-card"><div class="service-icon">◇</div><h3>Makeup</h3><p>Makeup services for special occasions.</p><span>From ₹999</span></article>
+        <article class="service-card"><div class="service-icon">♡</div><h3>Manicure & pedicure</h3><p>Basic hand and foot care services.</p><span>From ₹599</span></article>
+      </div>
+    </section>
+    <section class="how-section" id="how-it-works">
+      <div class="section-heading"><p class="eyebrow">SIMPLE & CONVENIENT</p><h2>How LushLook works</h2></div>
+      <div class="steps">
+        <div><b>01</b><h3>Choose</h3><p>Explore available beauty services.</p></div>
+        <div><b>02</b><h3>Request</h3><p>Send your preferred date and time.</p></div>
+        <div><b>03</b><h3>Confirm</h3><p>Wait for the service request to be confirmed.</p></div>
+        <div><b>04</b><h3>Enjoy</h3><p>Receive your selected service at home.</p></div>
+      </div>
+    </section>
+    <section class="booking-section" id="booking">
+      <div class="booking-copy"><p class="eyebrow">LET'S GET STARTED</p><h2>Request an appointment</h2><p>A request is saved only when the backend and database are running.</p></div>
+      <form id="booking-form">
+        <label for="customer-name">Your name</label><input id="customer-name" name="customer_name" required maxlength="100" placeholder="Enter your name">
+        <label for="customer-email">Email address</label><input id="customer-email" name="customer_email" type="email" required maxlength="150" placeholder="you@example.com">
+        <label for="service">Select a service</label><select id="service" name="service_name" required><option value="">Choose a service</option><option>Facial & skincare</option><option>Hair care</option><option>Makeup</option><option>Manicure & pedicure</option></select>
+        <label for="appointment-date">Preferred date</label><input id="appointment-date" name="appointment_date" type="date" required>
+        <label for="notes">Additional notes (optional)</label><textarea id="notes" name="notes" rows="3" maxlength="500" placeholder="Any preferences?"></textarea>
+        <button class="button" type="submit">Send request</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">L</span>ushLook</a><p>Beauty at your doorstep.</p><small>Academic project starter · Update before publishing</small></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
